@@ -106,7 +106,6 @@
        optgroup,
        select,
        textarea {
-           font-family: inherit;
            font-size: 100%;
            line-height: 1.15;
            margin: 0
@@ -178,7 +177,7 @@
        }
        
        html {
-           font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+           font-family: Vazir;
            line-height: 1.5
        }
        
