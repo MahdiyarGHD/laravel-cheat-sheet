@@ -3,12 +3,7 @@
        
        @font-face {
            font-family: Vazir;
-           src: url(../fonts/Vazir-Regular.woff) format('woff');
-       }
-       
-       @font-face {
-           font-family: Vazir;
-           src: url(../fonts/Vazir-Regular.ttf) format('ttf');
+           src: url(../fonts/Vazir-Regular.woff);
        }
        
        .alert {
