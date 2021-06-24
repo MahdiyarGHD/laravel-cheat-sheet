@@ -1,0 +1,25 @@
+{
+    "title": "دستورات آرتیسان",
+
+    "items": {
+        "item-1": {
+            "title": "auth:clear-resets",
+            "description": "لاراول ایپسوم متن ساختگی با تولید سادگی نامفهوم",
+            "more_description": "",
+
+            "code": "echo 'test';",
+            "item_code": 1
+        },
+
+        "item-2": {
+            "title": "auth:clear-resets",
+            "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم",
+            "more_description": "",
+
+            "code": "echo 'test2';",
+            "item_code": 2
+        }
+    }
+
+
+}

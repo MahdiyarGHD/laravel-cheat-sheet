@@ -1,0 +1,35 @@
+<div class="flex flex-col md:flex-row justify-between items-center" style="margin-top: 50px;">
+                                    <div class="flex-grow">
+                                        <h3 class="text-lg sm:text-1xl leading-6 font-bold font-heading text-center" style="color: white;margin-bottom: 10px;"><a id="artisan" href="#artisan">دستورات آرتیسان</a></h3>
+                                        <br>
+                                    </div>
+                                </div>
+
+                                <div class="shadow-lg rounded-lg overflow-hidden" id="NEED_CH_BODY"">
+                                    <div class="rounded-t-lg overflow-hidden bg-white p-10">
+                                        <h1 class="text-lg font-bold text-indigo-900 font-heading"><a href="#authclear-resets">title_t</a></h1>
+                                        <p class="searchContent text-gray-700 text-right">description_d</p>
+                                        <br>
+                                        <div id="description_more_body" class="text-sm mt-2 text-gray-700">
+                                            <p class="font-semibold text-right">description_more</p>
+                                        </div>
+                                    </div>
+                                    <div class="group relative overflow-hidden rounded-b-lg" style="background-color: #0d1117;">
+                                        <div class="flex items-center">
+                                            <div class="flex-initial"><pre class="scrollbar-none overflow-hidden overflow-x-auto p-6 pr-8 text-sm leading-snug text-white whitespace-pre-wrap"><code class="language-php" id="NEED_CH_ID">echo 'test';</code></pre></div>
+                                            <div class="pr-8 flex-1 text-right">
+                                                <button type="button" title="کپی کردن کد" class="btns group-hover:opacity-100 focus:opacity-100 opacity-0 text-white transition duration-200 focus:outline-none btn" onclick="copy(this.id)" id="NEED_B_CH_ID"><span class="sr-only">Click to copy</span> <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg></button>
+                                            </div>
+
+                                            <span class="pr-8 text-right">
+                                                <button type="button" title="کپی کردن لینک پست" class="btns group-hover:opacity-100 focus:opacity-100 opacity-0 text-white transition duration-200 focus:outline-none btn" onclick="getlink(this.id)" id="NEED_B_CH_ID"><span class="sr-only">Click to copy</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                                                <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                                                />
+                                                </svg>
+                                            </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
