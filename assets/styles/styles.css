@@ -7,11 +7,12 @@
        }
        
        .footer-object {
-           background-image: linear-gradient(45deg, hsla(50, 94.7%, 55.7%, 1) 0%, hsla(359, 100%, 65.3%, 1) 100%);
+           background-image: linear-gradient(45deg, rgb(208, 19, 233) 0%, rgb(26, 55, 224) 100%);
        }
        
        .body-bg {
-           background-image: linear-gradient(248deg, hsla(0, 0%, 0%, 1.00) 30%, hsla(0, 0%, 23.1%, 0.80) 100%);
+           background-color: hsla(227, 62.7%, 55.9%, 1);
+           background-image: radial-gradient(at 38% 93%, hsla(40, 98.6%, 72.5%, 1) 0, transparent 50%), radial-gradient(at 10% 78%, hsla(13, 91.3%, 55.1%, 1) 0, transparent 50%), radial-gradient(at 11% 38%, hsla(297, 49.1%, 41.6%, 1) 0, transparent 50%), radial-gradient(at 57% 21%, hsla(290, 55.7%, 46.1%, 1) 0, transparent 50%), radial-gradient(at 35% 35%, hsla(290, 55.7%, 46.1%, 1) 0, transparent 50%), radial-gradient(at 79% 9%, hsla(289, 55.7%, 46.1%, 1) 0, transparent 50%), radial-gradient(at 50% 49%, hsla(340, 72.3%, 53.3%, 1) 0, transparent 50%), radial-gradient(at 51% 50%, hsla(340, 72.3%, 53.3%, 1) 0, transparent 50%), radial-gradient(at 46% 93%, hsla(41, 98.7%, 70.4%, 1) 0, transparent 50%), radial-gradient(at 85% 36%, hsla(334, 70%, 51.6%, 1) 0, transparent 50%), radial-gradient(at 86% 64%, hsla(334, 70%, 51.6%, 1) 0, transparent 50%), radial-gradient(at 86% 89%, hsla(338, 70%, 51.6%, 1) 0, transparent 50%);
        }
        
        .alert {
@@ -24,7 +25,7 @@
            color: white;
            position: fixed;
            bottom: 12px;
-           right: 5px;
+           right: 10px;
            border-radius: 5px;
        }
        /* The close button */
