@@ -6,6 +6,14 @@
            src: url(../fonts/Vazir-Regular.woff);
        }
        
+       .footer-object {
+           background-image: linear-gradient(45deg, hsla(50, 94.7%, 55.7%, 1) 0%, hsla(359, 100%, 65.3%, 1) 100%);
+       }
+       
+       .body-bg {
+           background-image: linear-gradient(45deg, hsla(0, 0%, 0%, 1.00) 0%, hsla(210, 1%, 41.2%, 0.80) 100%);
+       }
+       
        .alert {
            z-index: 1;
            height: 50px;
@@ -378,9 +386,9 @@
            background-image: linear-gradient(90deg, var(--tw-gradient-stops))
        }
        
-       .from-blue-400 {
+       .from-yellow-400 {
            --tw-gradient-from: #60a5fa;
-           --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(96, 165, 250, 0))
+           --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(245, 223, 73))
        }
        
        .from-indigo-900 {
