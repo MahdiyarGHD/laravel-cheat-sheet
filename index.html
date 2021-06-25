@@ -85,14 +85,14 @@
 
                                     for (var i = 0; i < CountItems; i++) {
                                         var CurrentItem = resourceData;
-                                        CurrentItem.replace('title_t', GetItems['item-' + (i + 1)]['title']);
-                                        CurrentItem.replace('description_d', GetItems['item-' + (i + 1)]['description']);
-                                        CurrentItem.replace('description_more', GetItems['item-' + (i + 1)]['more_description']);
-                                        CurrentItem.replace('CODE_HERE', GetItems['item-' + (i + 1)]['code']);
+                                        CurrentItem = CurrentItem.replace('title_t', GetItems['item-' + (i + 1)]['title']);
+                                        CurrentItem = CurrentItem.replace('description_d', GetItems['item-' + (i + 1)]['description']);
+                                        CurrentItem = CurrentItem.replace('description_more', GetItems['item-' + (i + 1)]['more_description']);
+                                        CurrentItem = CurrentItem.replace('CODE_HERE', GetItems['item-' + (i + 1)]['code']);
 
-                                        CurrentItem.replace('NEED_B_CH_ID', "b-ch-" + GetItems['item-' + (i + 1)]['item_code']);
-                                        CurrentItem.replace('NEED_CH_ID', "ch-" + GetItems['item-' + (i + 1)]['item_code']);
-                                        CurrentItem.replace('NEED_CH_BODY', "ch-body-" + GetItems['item-' + (i + 1)]['item_code']);
+                                        CurrentItem = CurrentItem.replace('NEED_B_CH_ID', "b-ch-" + GetItems['item-' + (i + 1)]['item_code']);
+                                        CurrentItem = CurrentItem.replace('NEED_CH_ID', "ch-" + GetItems['item-' + (i + 1)]['item_code']);
+                                        CurrentItem = CurrentItem.replace('NEED_CH_BODY', "ch-" + GetItems['item-' + (i + 1)]['item_code'] + "-body");
 
                                         document.write(CurrentItem);
 

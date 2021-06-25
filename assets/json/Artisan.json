@@ -14,7 +14,7 @@
         "item-2": {
             "title": "auth:clear-resets",
             "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم",
-            "more_description": "",
+            "more_description": "تست تست تست تست تستس ت تتستستستستستستست تتست تست تست ست تس تتس تس تست س تست تس ست تست ستست تس تس تست ست تس تس تست ",
 
             "code": "echo 'test2';",
             "item_code": 2
