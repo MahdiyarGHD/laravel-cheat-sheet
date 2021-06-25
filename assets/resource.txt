@@ -1,9 +1,9 @@
 <div class="shadow-lg rounded-lg overflow-hidden" id="NEED_CH_BODY">
     <div class="rounded-t-lg overflow-hidden bg-white p-10">
-        <h1 class="text-lg font-bold text-indigo-900 font-heading"><a href="#authclear-resets">title_t</a></h1>
+        <h1 class="text-lg font-bold text-indigo-900 font-heading"><a href="">title_t</a></h1>
         <p class="searchContent text-gray-700 text-right">description_d</p>
         <br>
-        <div id="description_more_body" class="text-sm mt-2 text-gray-700">
+        <div id="" class="text-sm mt-2 text-gray-700">
             <p class="font-semibold text-right">description_more</p>
         </div>
     </div>
