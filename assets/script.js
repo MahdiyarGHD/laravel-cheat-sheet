@@ -23,7 +23,6 @@ function detectMob() {
 }
 
 if (detectMob() == true) {
-    console.log('On Mobile');
     var btns, i;
     btns = document.getElementsByClassName('btns');
     for (i = 0; i < btns.length; i++) {

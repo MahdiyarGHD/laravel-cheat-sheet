@@ -43,7 +43,7 @@
             "description": "بردن پروژه در حالت تعلیق",
             "more_description": "",
 
-            "code": "sphp artisan up",
+            "code": "php artisan up",
             "item_code": "5"
         },
         "item-6": {
