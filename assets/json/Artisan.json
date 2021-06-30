@@ -3,21 +3,105 @@
 
     "items": {
         "item-1": {
-            "title": "auth:clear-resets",
-            "description": "لاراول ایپسوم متن ساختگی با تولید سادگی نامفهوم",
+            "title": "Artisan",
+            "description": "اجرا کردن پروژه روی پورت دلخواه",
             "more_description": "",
 
-            "code": "echo 'test';",
+            "code": "php artisan serve --port 8000",
             "item_code": "1"
         },
 
         "item-2": {
-            "title": "auth:clear-resets",
-            "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم",
-            "more_description": "توضیحات اضافه مثلا",
+            "title": "Artisan",
+            "description": "ساخت مجدد فایل های AutoLoad فریمورک لاراول",
+            "more_description": "",
 
-            "code": "echo 'test2';",
+            "code": "php artisan dump-autoload",
             "item_code": "2"
+        },
+
+        "item-3": {
+            "title": "Artisan",
+            "description": "بهینه‌سازی پروژه برای پرفورمنس بهتر ",
+            "more_description": "",
+
+            "code": "php artisan optimize",
+            "item_code": "3"
+        },
+
+        "item-4": {
+            "title": "Artisan",
+            "description": "حذف کلاس های کامپایل شده",
+            "more_description": "",
+
+            "code": "php artisan clear-compiled",
+            "item_code": "4"
+        },
+
+        "item-5": {
+            "title": "Artisan",
+            "description": "بردن پروژه در حالت تعلیق",
+            "more_description": "",
+
+            "code": "sphp artisan up",
+            "item_code": "5"
+        },
+        "item-6": {
+            "title": "Artisan",
+            "description": "بردن پروژه در حالت تعلیق",
+            "more_description": "",
+
+            "code": " php artisan up",
+            "item_code": "6"
+        },
+        "item-7": {
+            "title": "Artisan",
+            "description": "ساخت یک کنترلر جدید",
+            "more_description": "",
+
+            "code": "php artisan make:controller",
+            "item_code": "7"
+        },
+
+        "item-8": {
+            "title": "Artisan",
+            "description": "ساخت یک کلاس ایونت جدید",
+            "more_description": "",
+
+            "code": "php artisan make:event",
+            "item_code": "8"
+        },
+        "item-9": {
+            "title": "Artisan",
+            "description": "ساخت یک کلاس ایمیل جدید",
+            "more_description": "",
+
+            "code": "php artisan make:email",
+            "item_code": "9"
+        },
+        "item-10": {
+            "title": "Artisan",
+            "description": "ساخت یک کامند جدید آرتیسان",
+            "more_description": "",
+
+            "code": "php artisan make:command",
+            "item_code": "10"
+        },
+        "item-11": {
+            "title": "Artisan",
+            "description": "ساخت یک میدِلوِر جدید ( Middleware )",
+            "more_description": "",
+
+            "code": "php artisan make:middleware",
+            "item_code": "11"
+        },
+        "item-12": {
+            "title": "Artisan",
+            "description": "راهنمایی درباره‌ی یک کامند ، به طور مثال :",
+            "more_description": "php artisan serve --help",
+
+            "code": "php artisan -h",
+            "item_code": "12"
         }
     }
 
