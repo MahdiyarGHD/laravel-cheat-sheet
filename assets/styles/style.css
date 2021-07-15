@@ -1,0 +1,288 @@
+    @font-face {
+        font-family: Vazir;
+        src: url(../fonts/Vazir-Regular.woff);
+    }
+
+    @font-face {
+        font-family: Kalame;
+        src: url(../fonts/KalamehWeb_Black.woff);
+    }
+    
+    .light {
+        background: url(../img/backgrounds/bg-light.jpg) center center / cover no-repeat fixed;
+        overflow-x: hidden;
+    }
+
+    .dark {
+        background: url(../img/backgrounds/bigSureDark.jpg) center center / cover no-repeat fixed;
+        overflow-x: hidden;
+
+    }
+
+    [class*="col-"] {
+        width: 100%;
+    }
+    
+    *‌ {
+        box-sizing: border-box;
+    }
+
+    @media only screen and (min-width: 600px) {
+        .col-s-1 {width: 8.33%;}
+        .col-s-2 {width: 16.66%;}
+        .col-s-3 {width: 25%;}
+        .col-s-4 {width: 33.33%;}
+        .col-s-5 {width: 41.66%;}
+        .col-s-6 {width: 50%;}
+        .col-s-7 {width: 58.33%;}
+        .col-s-8 {width: 66.66%;}
+        .col-s-9 {width: 75%;}
+        .col-s-10 {width: 83.33%;}
+        .col-s-11 {width: 91.66%;}
+        .col-s-12 {width: 100%;}
+    }
+  
+    @media only screen and (min-width: 768px) {
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+    }
+
+    .nav {
+        background: rgba( 255, 255, 255, 0.40 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 10.0px );
+        -webkit-backdrop-filter: blur( 10.0px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        width: 100%;
+        height: 35px;
+        margin-top: 30px;
+    }
+
+    .container {
+        margin: 0 auto;
+    }
+
+    .circles-nav {
+        float: left;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+
+    .circle-nav {
+        float: left;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        margin-left: 7px;
+    } 
+
+    .bg-red {
+        background: rgba(255, 0, 0, 0.76);
+    }
+
+    .bg-green {
+        background: rgba(9, 187, 9, 0.699);
+    }
+
+    .bg-orange {
+        background: rgba(255, 166, 0, 0.733);
+    }
+
+    .title {
+        display: block;
+        font-size: 1rem;
+        font-family: Vazir;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 5px;
+        transition: color 0.3s;
+        text-decoration: none;
+    }
+
+    .darkModeTitle {
+        color: rgba(233, 233, 233, 0.849); 
+    }
+    .LightModeTitle {
+        color: rgba(92, 92, 92, 0.849); 
+    }
+
+    .title:hover {
+        color: rgba(255, 255, 255, 0.808);
+    }
+
+    .icon-moon {
+        display: block;
+        float: right;
+        font-size: 18px;
+        color: rgba(92, 92, 92, 0.849); 
+        margin-top: -23px;
+        margin-right: 15px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .icon-sun {
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+        display: block;
+        float: right;
+        font-size: 18px;
+        color: rgba(252, 252, 252, 0.925); 
+        margin-top: -22px;
+        margin-right: 15px;
+    }
+
+    .noselect {
+      -webkit-touch-callout: none;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none; 
+                user-select: none;
+    }
+
+    .object {
+        height: 200px;
+        margin: 0 auto;
+        margin-top: 45px ;
+
+    }
+
+    .object-body {
+        background: rgba( 255, 255, 255, 0.50 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 20.0px );
+        -webkit-backdrop-filter: blur( 20.0px );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        height: 75%;
+        border-radius: 20px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .code-box {
+        height: 35%;
+        background-color: #1e1e1e;
+        margin-top: -15px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .object-title {
+        font-family: Vazir;
+        font-size: 1.2rem;
+        margin-top: 22px;
+        margin-left: 25px;
+    }
+
+    .object-description {
+        font-family: Vazir;
+        font-size: 1rem;
+        margin-top: 28px ;
+        float: right;
+        text-align: right;
+        margin-right: 35px ;
+        padding: 5px;
+    }
+
+    .icon-clipboard {
+        float: right;
+        margin-top: -75px;
+        margin-right: 35px;
+        display: block;
+        color: rgba(255, 255, 255, 0.774);
+        font-size: 24px;
+        cursor: pointer;
+        opacity: 0%;
+        transition: opacity 0.2s ease;
+    }
+
+    .icon-link {
+        float: right;
+        margin-top: -74px;
+        margin-right: 80px;
+        display: block;
+        color: rgba(255, 255, 255, 0.808);
+        font-size: 22px;
+        cursor: pointer;
+        opacity: 0%;
+        transition: opacity 0.2s ease;
+    }
+
+    .fade {
+        opacity: 100%;
+    }
+
+    .fade-out {
+        opacity: 0%;
+    }
+
+    @media (max-width:750px) {
+
+        .title {
+            margin-top: -18px;
+            float: left;
+        }
+
+        .icon-clipboard {
+            font-size: 18px;
+        }
+
+        .icon-link {
+            font-size: 18px;
+            margin-right: 70px;
+        }
+
+        .dark {
+            background-size: auto auto;
+        }
+
+        .light {
+            background-size: auto auto;
+
+        }
+
+        .object-description {
+            font-size: 0.8rem;
+            margin-right: 26px;
+            margin-top: 27px;
+        }
+
+        .object-title {
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width:320px) {
+
+        .object-description {
+            margin-top: 26px;
+            margin-right: 10px;
+        }
+
+        .title {
+            margin-top: -17px;
+            float: left;
+            font-size: 0.8rem;
+            margin-left: 15px;
+        }
+
+        .icon-moon {
+            margin-top: -19px;
+        }
+
+        .icon-sun {
+            margin-top: -19px;
+        }
+
+    }
