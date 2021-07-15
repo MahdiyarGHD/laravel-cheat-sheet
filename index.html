@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fa">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,45 +12,128 @@
 
     <link rel="stylesheet" href="assets/lib/highlight.js/styles/vs2015.min.css">
     <script src="assets/lib/highlight.js/highlight.min.js"></script>
-    
+    <script>
+        function detectMob() {
+            const toMatch = [
+                /Android/i,
+                /webOS/i,
+                /iPhone/i,
+                /iPad/i,
+                /iPod/i,
+                /BlackBerry/i,
+                /Windows Phone/i
+            ];
+
+            return toMatch.some((toMatchItem) => {
+                return navigator.userAgent.match(toMatchItem);
+            });
+        }
+    </script>
 </head>
+
 <body class="light">
 
-<div class="col-s-5 col-8 container">
-
-    <nav class="nav">
-
-        <div class="circles-nav col-3 col-s-3">
-            <div class="circle-nav bg-red"></div>
-            <div class="circle-nav bg-orange"></div>
-            <div class="circle-nav bg-green"></div>
-        </div>
-
-        <a href="#" id="title-header" class="title noselect col-9 col-s-9 LightModeTitle">چیت‌شیت فارسی لاراول</a>
-
-        <a onclick="DarkMode()" id="DarkModeButton" class="icon-moon"></a>
-
-    </nav>
-
-
-    <div id="ch-1" class="object col-9 col-s-9">
-        <div class="object-body">
-            <div class="object-title">Artisan Test</div>
-            <div class="object-description">...توضیحات اضافه مثلا لورم ایپسوم فلان فلان و فلان</div>
-        </div>
-        <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-            <pre>
-                    <code class="language-php">  echo 'test';</code>
-            </pre>
-            <a id="clipboard" class="icon-clipboard btn"></a>
-            <a id="link" class="icon-link btn"></a>
-        </div>
+    <div id="alert" class="alert rounded-lg" style="opacity: 0;" dir="rtl">
+        کد مورد نظر کپی شد
     </div>
 
+    <div class="col-s-5 col-8 container">
 
-</div>
+        <nav class="nav">
+
+            <div class="circles-nav col-3 col-s-3">
+                <div class="circle-nav bg-red"></div>
+                <div class="circle-nav bg-orange"></div>
+                <div class="circle-nav bg-green"></div>
+            </div>
+
+            <a href="#" id="title-header" class="title noselect col-9 col-s-9 LightModeTitle">چیت‌شیت فارسی لاراول</a>
+
+            <a onclick="DarkMode()" id="DarkModeButton" class="icon-moon"></a>
+
+        </nav>
+
+
+        <div id="contextMenu" class="context-menu" style="display: none">
+            <ul class="menu">
+                <li class="share"><a href="https://github.io/MahdiyarGHD">آدرس گیت‌هاب</a></li>
+
+            </ul>
+        </div>
+
+
+        <div id="ch-1" class="object col-9 col-s-9">
+            <div class="object-body">
+                <div class="object-title">Artisan Test</div>
+                <div class="object-description">...توضیحات اضافه مثلا لورم ایپسوم فلان فلان و فلان</div>
+            </div>
+            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
+                <pre>
+                    <code class="language-php">  echo 'test';</code>
+            </pre>
+                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
+                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
+            </div>
+        </div>
+
+
+
+        <div id="ch-2" class="object col-9 col-s-9">
+            <div class="object-body">
+                <div class="object-title">Artisan Test 2</div>
+                <div class="object-description">لاراول در فلان فلان شده و فلان</div>
+            </div>
+            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
+                <pre>
+                    <code class="language-php">  echo 'test2';</code>
+            </pre>
+                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
+                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
+            </div>
+        </div>
+
+
+
+        <div id="ch-3" class="object col-9 col-s-9">
+            <div class="object-body">
+                <div class="object-title">Artisan Test 3</div>
+                <div class="object-description">ارتیسان در فلان فلان شده و فلان</div>
+            </div>
+            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
+                <pre>
+                    <code class="language-php">  echo 'test3';</code>
+            </pre>
+                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
+                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
+            </div>
+        </div>
+
+
+
+        <div id="ch-4" class="object col-9 col-s-9">
+            <div class="object-body">
+                <div class="object-title">Artisan Test 4</div>
+                <div class="object-description">میدل‌ویر فلان فلان شده و فلان</div>
+            </div>
+            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
+                <pre>
+                    <code class="language-php">  echo 'test4';</code>
+            </pre>
+                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
+                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="col-12 col-s-12 copyright"><a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> | محفوظ است @LaravelTip تمامی حقوق برای</div>
+        </footer>
+
+        <div class="fakespace"></div>
+
+    </div>
 
 
     <script src="assets/js/index.js"></script>
 </body>
+
 </html>
