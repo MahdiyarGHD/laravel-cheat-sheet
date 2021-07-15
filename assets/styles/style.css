@@ -58,14 +58,14 @@
     }
 
     .nav {
-        background: rgba( 255, 255, 255, 0.40 );
+        background: rgba(255, 255, 255, 0.267);
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
         backdrop-filter: blur( 10.0px );
         -webkit-backdrop-filter: blur( 10.0px );
         border-radius: 10px;
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        border: 2px solid rgba( 255, 255, 255, 0.18 );
         width: 100%;
-        height: 35px;
+        height: 38px;
         margin-top: 30px;
     }
 
@@ -75,7 +75,7 @@
 
     .circles-nav {
         float: left;
-        margin-top: 10px;
+        margin-top: 12px;
         margin-left: 5px;
     }
 
@@ -105,7 +105,7 @@
         font-family: Vazir;
         text-align: center;
         font-weight: bold;
-        margin-top: 5px;
+        margin-top: 6px;
         transition: color 0.3s;
         text-decoration: none;
     }
@@ -126,7 +126,7 @@
         float: right;
         font-size: 18px;
         color: rgba(92, 92, 92, 0.849); 
-        margin-top: -23px;
+        margin-top: -22px;
         margin-right: 15px;
         cursor: pointer;
         transition: all 0.5s ease-in-out;
