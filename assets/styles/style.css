@@ -9,13 +9,13 @@
     }
     
     .light {
-        background: url(../img/backgrounds/bg-light.jpg) center center / cover no-repeat fixed;
+        background: url(../img/backgrounds/light.svg) center center / cover no-repeat fixed;
         overflow-x: hidden;
         transition: all 0.3 ease-out;
     }
     
     .dark {
-        background: url(../img/backgrounds/bigSureDark.jpg) center center / cover no-repeat fixed;
+        background: url(../img/backgrounds/dark.svg) center center / cover no-repeat fixed;
         overflow-x: hidden;
         transition: all 0.3 ease-out;
     }
@@ -197,7 +197,7 @@
         display: block;
         float: right;
         font-size: 18px;
-        color: rgba(92, 92, 92, 0.849);
+        color: rgba(196, 196, 196, 0.849);
         margin-top: -21px;
         margin-right: 15px;
         cursor: pointer;
@@ -346,7 +346,7 @@
         font-size: 0.9rem;
         margin-top: 8px;
         transition: all 0.3;
-        color: rgba(114, 107, 107, 0.849);
+        color: rgba(65, 63, 63, 0.849);
         text-align: center;
     }
     
@@ -356,9 +356,11 @@
     
     .context-menu {
         position: absolute;
+        z-index: 5;
     }
     
     .menu {
+        font-family:Vazir;
         display: flex;
         flex-direction: column;
         background: rgba( 255, 255, 255, 0.10);
@@ -371,7 +373,20 @@
         box-shadow: 0 10px 20px rgb(64 64 64 / 5%);
         padding: 10px 0;
         list-style-type: none;
+    }
+
+    .share {
+        padding: 7px;
+    }
+
+    .share a {
         text-decoration: none;
+        color:rgba(255, 255, 255, 0.822); ;
+        transition: all 0.3 ease;
+    }
+    .share a:hover {
+        text-decoration: none;
+        color:rgba(165, 165, 165, 0.822); ;
     }
     
     .fakespace {
@@ -406,4 +421,17 @@
         .icon-sun {
             margin-top: -19px;
         }
+    }
+
+    .footer-link {
+        color: rgba(7, 255, 255, 0.671);
+    }
+
+    .header {
+        font-size: 1.5rem;
+        font-family: Vazir;
+        text-align: center;
+        margin-top: 45px;
+        color: white;
+        font-weight: bold;
     }

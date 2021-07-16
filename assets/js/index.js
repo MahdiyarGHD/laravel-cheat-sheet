@@ -55,7 +55,7 @@ function DarkMode() {
                 title_header.classList.toggle('darkModeTitle');
 
                 var copyRight = document.querySelector('.copyright');
-                copyRight.style.color = 'rgba(92, 92, 92, 0.849);';
+                copyRight.style.color = 'rgba(65, 63, 63, 0.849)';
 
                 localStorage.setItem('DarkMode', 'Light');
                 break;
@@ -146,7 +146,8 @@ function CopyCode(id) {
 
 function CopyLink(id) {
     copyText('https://MahdiyarGHD.github.io/laravel-cheat-sheet#' + id);
-    var x = document.getElementById("alert");
+    let x;
+    x = document.getElementById("alert");
     x.innerHTML = 'لینک پست کپی شد !';
     unfadeElement(x);
 
