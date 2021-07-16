@@ -209,3 +209,5 @@ function rightClick(e) {
     }
 }
 hljs.highlightAll();
+ScrollReveal({ reset: true });
+ScrollReveal().reveal('.object');

@@ -8,6 +8,10 @@
         src: url(../fonts/KalamehWeb_Black.woff);
     }
     
+    .html {
+        scroll-behavior: smooth;
+    }
+
     .light {
         background: url(../img/backgrounds/Desktop-light.jpg) center center / cover no-repeat fixed;
         overflow-x: hidden;
