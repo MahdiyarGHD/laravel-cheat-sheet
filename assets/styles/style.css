@@ -10,16 +10,17 @@
     
     .html {
         scroll-behavior: smooth;
+        overflow-x: hidden;
     }
 
     .light {
-        background: url(../img/backgrounds/Desktop-light.jpg) center center / cover no-repeat fixed;
+        background: #4e8cbe;
         overflow-x: hidden;
         transition: all 0.3 ease-out;
     }
     
     .dark {
-        background: url(../img/backgrounds/Desktop-dark.jpg) center center / cover no-repeat fixed;
+        background: #194c75;
         overflow-x: hidden;
         transition: all 0.3 ease-out;
     }
@@ -326,6 +327,12 @@
     }
     
     @media (max-width:750px) {
+
+        .icon-moon {
+            color: rgba(185, 185, 185, 0.849);
+
+        }
+
         .title {
             margin-top: -18px;
             float: left;

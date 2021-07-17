@@ -208,6 +208,7 @@ function rightClick(e) {
         menu.style.top = e.pageY + "px";
     }
 }
+
 hljs.highlightAll();
-ScrollReveal({ reset: true });
+ScrollReveal({ reset: true ,delay:50});
 ScrollReveal().reveal('.object');
