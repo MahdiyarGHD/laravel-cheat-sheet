@@ -16,6 +16,7 @@
     .light {
         background-image: linear-gradient(45deg, hsla(190,64.4%,57.1%,1.00) 0%, hsla(239,45.6%,71.2%,1.00) 100%);
         background-size: cover;
+        background-attachment: fixed;
         overflow-x: hidden;
         transition: all 0.3 ease-out;
     }
