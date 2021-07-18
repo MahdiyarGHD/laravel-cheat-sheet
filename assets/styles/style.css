@@ -8,7 +8,7 @@
         src: url(../fonts/KalamehWeb_Black.woff);
     }
     
-    .html {
+    html {
         scroll-behavior: smooth;
         overflow-x: hidden;
     }
@@ -132,10 +132,10 @@
         z-index: 1;
         height: 20px;
         opacity: 80%;
-        width: 150px;
+        width: 180px;
         padding: 15px;
         padding-bottom: 20px;
-        padding-right: 20px;
+        padding-right: 25px;
         background-color: #323232;
         color: white;
         position: fixed;
@@ -147,7 +147,6 @@
     
     .container {
         margin: 0 auto;
-        padding: 15px;
     }
     
     .rounded-lg {
@@ -450,7 +449,7 @@
     }
 
     .footer-link {
-        color: rgba(7, 255, 255, 0.671);
+        color: rgba(6, 240, 240, 0.747);
     }
 
     .header {
@@ -460,4 +459,6 @@
         margin-top: 45px;
         color: white;
         font-weight: bold;
+        display: block;
+        text-decoration:none;
     }

@@ -202,7 +202,33 @@ function rightClick(e) {
     }
 }
 
+function copy_category(el) {
+    copyText('https://MahdiyarGHD.github.io/laravel-cheat-sheet#' + el.id);
+    let x;
+    x = document.getElementById("alert");
+    x.innerHTML = 'لینک دسته‌بندی کپی شد !';
+    unfadeElement(x);
+
+    setTimeout(() => {
+        let Opacity = x.style.opacity;
+        if (Opacity >= 1) {
+            fadeElement(x);
+        }
+    }, 1500);
+}
+
 hljs.highlightAll();
 ScrollReveal({ reset: true ,delay:50});
 ScrollReveal().reveal('.object');
 ScrollReveal().reveal('.header');
+
+var phpObjects = document.getElementsByClassName('language-php');
+for (var i = 0; i < phpObjects.length; i++)
+{   
+    var CurrentLength = phpObjects[i].innerText.length;
+    if ( CurrentLength > 50 )
+    {
+        phpObjects[i].parentElement.parentElement.getElementsByClassName('icon-link')[0].style.display = 'none'
+        phpObjects[i].parentElement.parentElement.getElementsByClassName('icon-clipboard')[0].style.display = 'none'
+    }
+}
