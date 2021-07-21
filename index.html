@@ -6,1251 +6,139 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>چیت‌شیت فارسی لاراول</title>
-
     <link rel="stylesheet" href="assets/styles/style.css">
-    <link rel="stylesheet" href="assets/fonts/icomoon/style.css">
-
-    <link rel="stylesheet" href="assets/lib/highlight.js/styles/vs2015.min.css?v=0.2">
-    <script src="assets/lib/highlight.js/highlight.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-        function detectMob() {
-            const toMatch = [
-                /Android/i,
-                /webOS/i,
-                /iPhone/i,
-                /iPad/i,
-                /iPod/i,
-                /BlackBerry/i,
-                /Windows Phone/i
-            ];
-
-            return toMatch.some((toMatchItem) => {
-                return navigator.userAgent.match(toMatchItem);
-            });
-        }
-    </script>
+    <link id="hljs-link" rel="stylesheet" href="assets/js/lib/highlightjs/styles/github-dark.min.css">
+    <script src="assets/js/lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/lib/highlightjs/highlight.min.js"></script>
 </head>
 
-<body class="light" target="_blank">
+<body class="light">
 
-    <div id="alert" class="alert rounded-lg noselect" style="opacity: 0;" dir="rtl">
-        کد مورد نظر کپی شد
-    </div>
-
-    <div class="col-s-5 col-8 container">
-
-        <nav class="nav">
-
-            <div class="circles-nav col-3 col-s-3">
-                <div class="circle-nav bg-red"></div>
-                <div class="circle-nav bg-orange"></div>
-                <div class="circle-nav bg-green"></div>
-            </div>
-
-            <a href="#" id="title-header" class="title noselect col-9 col-s-9 LightModeTitle">چیت‌شیت فارسی لاراول</a>
-
-            <a onclick="DarkMode()" id="DarkModeButton" class="icon-moon"></a>
-
+    <div class="col-8 col-s-8 container">
+        <nav class="nav col-12 col-s-12">
+            <img class="nav-logo" src="assets/img/laravel.svg" alt="laravel-logo">
+            <div class="header-title"><span>چیت‌شیت فارسی لاراول</span><br> <span class="header-description"> اولین
+                    چیت‌شیت فارسی لاراول (: </span></div>
+            <label for="toggle" class="theme-toggler settings-option" id="theme-toggler">
+                <input type="checkbox" id="toggle" class="theme-toggler__checkbox" /><span aria-hidden="true"
+                    class="theme-toggler__switch"></span></label>
         </nav>
 
+        <div class="container-content col-8">
 
-        <div id="contextMenu" class="context-menu" style="display: none">
-            <ul class="menu">
-                <li class="share"><a href="https://github.com/MahdiyarGHD">گیت‌هاب ما</a></li>
-                <li class="share"><a href="https://t.me/LaravelTip">کانال تلگرام</a></li>
+            <div class="col-12 col-s-12 head-text" dir="rtl">ایجاد یک پروژه جدید لاراولی</div>
 
-            </ul>
-        </div>
-
-
-        <a href="#artisan" onclick="copy_category(this)" id="artisan" class="header noselect col-12 col-s-11 artisan">Artisan</a>
-
-
-        <div id="ch-1" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Artisan</div>
-                <div class="object-description noselect"> AutoLoad ساخت مجدد فایل های </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  php artisan dump-autoload;</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-
-
-        <div id="ch-2" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Artisan</div>
-                <div class="object-description">اجرای پروژه روی پورت دلخواه</div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  php artisan serve --port 8000</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-
-
-        <div id="ch-3" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Artisan</div>
-                <div class="object-description">بهینه‌سازی پروژه برای پرفورمنس بهتر </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  php artisan optimize</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-
-
-        <div id="ch-4" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Artisan</div>
-                <div class="object-description">حذف کلاس های کامپایل شده</div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  php artisan clear-compiled</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-
-        <div id="ch-5" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Artisan</div>
-                <div class="object-description">بردن پروژه در حالت تعلیق</div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  php artisan down</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-
-        <div id="ch-6" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Artisan</div>
-                <div class="object-description">در آوردن پروژه از حالت تعلیق</div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  php artisan up</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-
-        <div id="ch-7" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Artisan</div>
-                <div class="object-description">ساخت یک کنترلر جدید</div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  php artisan make:controller</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-
-        <div id="ch-8" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Artisan</div>
-                <div class="object-description">ساخت یک کلاس ایونت جدید</div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  php artisan make:event</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-
-        <div id="ch-9" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Artisan</div>
-                <div class="object-description">ساخت یک کلاس ایمیل جدید</div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  php artisan make:email</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-
-        <div id="ch-10" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Artisan</div>
-                <div class="object-description">ساخت یک کامند جدید آرتیسان</div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  php artisan make:command</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-
-        <div id="ch-11" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Artisan</div>
-                <div class="object-description">  ( Middleware ) ساخت یک میدِلوِر جدید</div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  php artisan make:middleware</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-        <div id="ch-12" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Artisan</div>
-                <div class="object-description">  دریافت راهنمایی درباره‌ی یک کامند </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  php artisan -h | php artisan serve --help </code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-        <div id="ch-13" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Artisan</div>
-                <div class="object-description">  نمایش تغییرات فریمورک</div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  php artisan changes</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-        <div id="ch-14" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Artisan</div>
-                <div class="object-description">این دستور به شما اجازه میده با کامند لاین به پروژه لاراولیتون دسترسی داشته باشید</div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  php artisan tinker</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-        <div id="ch-15" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Artisan</div>
-                <div class="object-description"> ( تنظیمات پروژه ) .env نمایش محتویات فایل </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  php artisan env </code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-        <div id="ch-16" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Artisan</div>
-                <div class="object-description"> خالی کردن کش پروژه </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  php artisan cache:clear </code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-        <div id="ch-17" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Artisan</div>
-                <div class="object-description"> ( Aplication Key ) تنظیم کردن کلید پروژه </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php"> php artisan key:generate </code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-        <div id="ch-18" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Artisan</div>
-                <div class="object-description"> ساخت یک کلاس ریکوئست جدید </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  php artisan make:request name </code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-        <div id="ch-19" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Artisan</div>
-                <div class="object-description"> ( Undo ) برگرداندن میگریشن ها یک مرحله به عقب </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  php artisan migrate:rollback </code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-        <div id="ch-20" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Artisan</div>
-                <div class="object-description"> لیست تمامی روت های ثبت شده در پروژه </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  php artisan route:list </code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-        <div id="ch-21" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Artisan</div>
-                <div class="object-description"> ریست کردن تمام میگریشن‌های اجرا شده یک پروژه</div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  php artisan migrate:reset </code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-        <div id="ch-22" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Artisan</div>
-                <div class="object-description"> Artisan نمایش لیست تمام کامند های  </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  php artisan list </code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-
-        <div class="fakespace col-12 col-s-12"> ‌</div>
-        <a href="#blade" onclick="copy_category(this)" id="blade" class="header noselect col-12 col-s-12 blade">Blade</a>
-
-
-        <div id="ch-23" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Blade</div>
-                <div class="object-description">Blade دستورات شرطی در تمپلیت انجین  </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="plaintext">   @unless , @endunless , @if , @else , @elseif, @endif</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-        <div id="ch-24" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Blade</div>
-                <div class="object-description"> دستورات حلقه‌ای تمپلیت انجین Blade  </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php"> @for , @endfor , @foreach , @endforeach , @while , @endwhile </code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-        <div id="ch-25" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Blade</div>
-                <div class="object-description">  چاپ کردن محتوی در صفحه  </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php"> {{ $var }} </code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-        <div id="ch-26" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Blade</div>
-                <div class="object-description">htmlspecialchars  چاپ کردن محتوی در صفحه بدون در نظر گرفتن بحث</div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  {!! $var !!} </code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-        <div id="ch-27" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Blade</div>
-                <div class="object-description">  بارگزاری فایل تمپلیت انجین در قسمتی از پروژه که این کد استفاده شده است  </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  @include('name')</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-        <div id="ch-28" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Blade</div>
-                <div class="object-description"> استفاده از کدهای پی‌اچ‌پی در تملپیت انجین </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php"> @php , @endphp </code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-        <div id="ch-29" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Blade</div>
-                <div class="object-description"> بارگزاری فایل تمپلیت انجین در قسمتی از پروژه  </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php"> @section('name') , @endsection , @yield('name') , extend('name')</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-
-        <div class="fakespace col-12 col-s-12"> ‌</div>
-        <a href="#security" onclick="copy_category(this)" id="security" class="header noselect col-12 col-s-12 security">Security</a>
-
-
-
-        <div id="ch-30" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Security</div>
-                <div class="object-description"> هش کردن متن وارد شده توسط خود لاراول  </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="php"> Hash::make('SecretString')</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-
-        <div id="ch-31" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Security</div>
-                <div class="object-description"> چک کردن هش شده بودن متن  </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php"> Hash::check('String', $hashedString)</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-
-        <div id="ch-32" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Security</div>
-                <div class="object-description"> رمزنگاری با قابلیت بازگشایی متن توسط لاراول  </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php"> Crypt::encrypt('secretstring')</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-
-        <div id="ch-33" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Security</div>
-                <div class="object-description"> بازگشایی متن رمزنگاری شده توسط لاراول  </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php"> Crypt::decrypt($encryptedString)</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-
-        <div id="ch-34" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Security</div>
-                <div class="object-description"> تنظیم کردن حالت رمزنگاری </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  Crypt::setMode('ctr') ; Crypt::setCipher($cipher) </code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-
-        <div class="fakespace col-12 col-s-12"> ‌</div>
-        <a href="#email" onclick="copy_category(this)" id="email" class="header noselect col-12 col-s-12 email">Email</a>
-
-
-
-        <div id="ch-35" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Email</div>
-                <div class="object-description"> ارسال ایمیل ، با استفاده از لاراول</div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php"> Mail::send('email.view', $data, function($message){})</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-
-        <div id="ch-36" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Email</div>
-                <div class="object-description">  برای کار کردن این دستورات ، باید در فایل تنظیمات پروژه بصورت زیر این کانفیگ ها را وارد کنید   </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre class="long">
-                    <code class="language-php">MAIL_DRIVER = smtp | MAIL_HOST = smtp.gmail.com | MAIL_PORT = 587 | MAIL_USERNAME = your-gmail-username | MAIL_PASSWORD = your-application-specific-password | MAIL_ENCRYPTION = tls
-                    </code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-
-        <div id="ch-37" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Email</div>
-                <div class="object-description"> آدرس کسی که باید برای ان ایمیل ارسال می‌شود </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php"> $message->to('email@example.com', 'Mr. Example')</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-
-
-        <div id="ch-38" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Email</div>
-                <div class="object-description">ارسال فایل ضمیمه همراه با ایمیل </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php"> $message->attach('foo\bar.txt'); $message->embed('foo\bar.txt');
-                    </code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-
-
-        <div id="ch-39" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Email</div>
-                <div class="object-description">  لیست کامل بقیه تنظیمات ایمیل  </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs"> <a href="https://t.me/LaravelTip/55">https://t.me/LaravelTip/55</a></code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-
-        <div class="fakespace col-12 col-s-12"> ‌</div>
-        <a href="#files" onclick="copy_category(this)" id="files" class="header noselect col-12 col-s-12 files">Files</a>
-
-
-        <div id="ch-40" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Files</div>
-                <div class="object-description">  بررسی وجود داشتن یک آدرس  </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  File::exists('path')</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-        <div id="ch-41" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Files</div>
-                <div class="object-description">( ویرایش محتوی یک فایل ( پارامتر اول آدرس فایل و پارامتر دوم محتوی </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  File::put('path', 'contents')</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-        <div id="ch-42" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Files</div>
-                <div class="object-description">  افزودن متن به فایل </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  File::append('path', 'data')</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-        <div id="ch-43" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Files</div>
-                <div class="object-description">  پاک کردن فایل توسط آدرس فایل </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  File::delete('path')</a></code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-        <div id="ch-44" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Files</div>
-                <div class="object-description"> جابه‌جایی فایل از مکانی به مکان دیگر </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  File::move('path', 'target')</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-        <div id="ch-45" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Files</div>
-                <div class="object-description"> کپی کردن فایل از مکانی به مکان دیگر  </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  File::copy('path', 'target')</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-        <div id="ch-46" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Files</div>
-                <div class="object-description">  دریافت نوع فایل با استفاده از آدرس فایل </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  File::type('path')</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-
-
-        <div id="ch-47" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Files</div>
-                <div class="object-description">   دریافت تمام دایرکتوری های درون یک دایرکتوری </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php">  File::directories('directory')</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-
-
-        <div id="ch-48" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Files</div>
-                <div class="object-description">  و بقیه دستورات کنترلی دایرکتوری ها </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs">  File::copyDirectory('directory', 'destination', $options = null); File::deleteDirectory('directory', $preserve = false); File::cleanDirectory('directory'); File::makeDirectory('path', $mode = 0777, $recursive = false);
-                    </code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-        <div id="ch-49" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Files</div>
-                <div class="object-description">   تشخیص قابل نوشتن بودن مسیر فایلی که داده شده است </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
+            <div class="col-12 col-s-12 code-container">
+                <div class="circles-container">
+                    <div class="green-circle"></div>
+                    <div class="orange-circle"></div>
+                    <div class="red-circle"></div>
+                </div>
                 <pre>
-                    <code class="language-php hljs">  File::isWritable('path')</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
+<code class="language-php hljs">
+  composer create-project laravel/laravel example-app
+</code>
+</pre>
             </div>
-        </div>
 
-        <div id="ch-50" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Files</div>
-                <div class="object-description">   دریافت تاریخ آخرین ویرایش/ایجاد یک فایل </div>
+            <div class="col-12 col-s-12 tags-container">
+            <div class="col-12 col-s-12 head-text" dir="rtl">لیست موضوعات</div>
+                <a href="#artisan" class="tag">ارتیسان</a>
+                <a href="#" class="tag">ارتیسان</a>
+                <a href="#" class="tag">ارتیسان</a>
+                <a href="#" class="tag">ارتیسان</a>
+                <a href="#" class="tag">ارتیسان</a>
+                <a href="#" class="tag">ارتیسان</a>
+                <a href="#" class="tag">ارتیسان</a>
+                <a href="#" class="tag">ارتیسان</a>
+                <a href="#" class="tag">ارتیسان</a>
+                <a href="#" class="tag">ارتیسان</a>
             </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs">   File::lastModified('path')</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
 
-        <div id="ch-51" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Files</div>
-                <div class="object-description">   دریافت تمام فایل های یک دایرکتوری بصورت آرایه </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs">  File::files('directory')</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-        
 
-        <div class="fakespace col-12 col-s-12"> ‌</div>
-        <a href="#cookies" onclick="copy_category(this)" id="cookies" class="header noselect col-12 col-s-12 cookies">Cookies</a>
+            <div class="article-container">
+                <div class="col-4 col-s-4 head-text dotted" style="margin-top: 10px; font-size: 1.5rem;" id="artisan">آرتیسان</div>
+                <div class="col-12 col-s-12 code-container">
+                    <div class="circles-container">
+                        <div class="green-circle"></div>
+                        <div class="orange-circle"></div>
+                        <div class="red-circle"></div>
+                    </div>
+                    <pre>
+    <code class="language-php hljs"> 
+// اجرای پروژه روی پورت دلخواه
+php artisan serve --port 8000
 
+// ساخت مجدد فایل های اتو فریمورک لاراول
+php artisan dump-autoload
 
+// بهینه‌سازی پروژه برای پرفورمنس بهتر 
+php artisan optimize
 
-        <div id="ch-52" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Cookies</div>
-                <div class="object-description">    ساخت کوکی ابدی </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs">  Cookie::forever('key', 'value');</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-        
-        <div id="ch-53" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Cookies</div>
-                <div class="object-description">  ساخت کوکی با زمان مشخص منقضی شدن </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs">  Cookie::make('key', 'value', 'minutes')</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-        
-        <div id="ch-54" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Cookies</div>
-                <div class="object-description">   حذف کوکی با استفاده از کلید/نام کوکی </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs">  Cookie::forget('key');</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-        
-        
+// حذف کلاس های کامپایل شده    
+php artisan clear-compiled
 
-        <div class="fakespace col-12 col-s-12"> ‌</div>
-        <a href="#authentication" onclick="copy_category(this)" id="authentication" class="header noselect col-12 col-s-12 authentication">Authentication </a>
+// بهینه‌سازی پروژه برای پرفورمنس بهتر 
+php artisan down
 
+// بردن پروژه در حالت تعلیق
+php artisan optimize
 
-        <div id="ch-55" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Authentication</div>
-                <div class="object-description">   چک کردن لاگین بودن کاربر  </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs">  Auth::check()</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
+// در آوردن پروژه از حالت تعلیق
+php artisan up
 
-        <div id="ch-56" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Authentication</div>
-                <div class="object-description">  دریافت اطلاعات کاربر لاگین شده‌ </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs">  Auth::user()</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
+// ساخت یک کنترلر جدید
+php artisan make:controller
 
-        <div id="ch-57" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Authentication</div>
-                <div class="object-description">   دریافت آیدی کاربر لاگین شده </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs">  Auth::id()</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
+// ساخت یک کلاس ایونت جدید
+php artisan make:event
 
-        <div id="ch-58" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Authentication</div>
-                <div class="object-description">   لاگین کردن کاربر با استفاده از آيدی </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs"> Auth::loginUsingId(1) ; Auth::login(User::find(1)) </code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
+// ساخت یک کلاس ایمیل جدید
+php artisan make:email
 
-        <div id="ch-59" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Authentication</div>
-                <div class="object-description">  ارسال یک یادآور پسورد برای کاربر </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs">  Password::remind($credentials, function($message, $user){});</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-        
+// ساخت یک کامند جدید آرتیسان
+php artisan make:command
 
-        <div id="ch-60" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Authentication</div>
-                <div class="object-description">  ساخت 'مرا به خاطر بسپار' با گذاشتن مقدار true </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs">  Auth::attempt($credentials, true)</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-        
+// ساخت یک میدِلوِر جدید
+php artisan make:middleware
 
-        <div id="ch-61" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Authentication</div>
-                <div class="object-description">  بررسی صحت یک کاربر</div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs">  Auth::validate($credentials)</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
+// دریافت راهنمایی درباره یک کامند
+php artisan -h 
+php artisan --help
 
-        <div id="ch-62" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Authentication</div>
-                <div class="object-description">  ساخت 'مرا به خاطر بسپار' با استفاده از ایمیل و پسورد کاربر‌‌ </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs">  Auth::attempt(array('email' => $email, 'password' => $password))</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-        
-        <div id="ch-63" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Authentication</div>
-                <div class="object-description"> لاگین کردن کاربر فقط یک بار بدون ذخیره کردن کوکی </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs">  Auth::once($credentials)</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-        
+// نمایش تغییرات فریمورک
+php artisan changes
 
-        <div class="fakespace col-12 col-s-12"> ‌</div>
-        <a href="#request" onclick="copy_category(this)" id="request" class="header noselect col-12 col-s-12 authentication">Request</a>
+// کنسول تینکر به شما اجازه میده با استفاده از کامندلاین با پروژه لاراولی‌تون ارتباط برقرار کنید 
+php artisan tinker
 
-        
-        <div id="ch-64" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Request</div>
-                <div class="object-description"> دریافت نوع ریکوئست </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs">  Request::method()</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>    
+// .env نمایش محتویات فایل
+php artisan env 
 
-        <div id="ch-65" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Request</div>
-                <div class="object-description">بررسی نوع یک ریکوئست با متود مشخص شده</div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs">  Request::isMethod('post')</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-            
-        <div id="ch-66" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Request</div>
-                <div class="object-description"> دریافت پورت ریکوئست</div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs">  Request::getPort()</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-              
-        <div id="ch-67" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Request</div>
-                <div style="direction: rtl;" class="object-description"> برگرداندن مقدار True درصورتی که  Header ریکوئست حاوی */json باشد</div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs">  Request::isJson()</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
+// خالی کردن کش پروژه
+php artisan cache:clear
 
-        <div id="ch-68" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Request</div>
-                <div class="object-description"> دریافت ایپی کاربر </div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs">  Request::getClientIp()</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
+// تنظیم کلید پروژه 
+php artisan key:generate
 
-        <div id="ch-69" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Request</div>
-                <div class="object-description"> مسیر جاری URi دریافت</div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs">  $request->path()</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
+// ساخت یک کلاس ریکوئست جدید
+php artisan make:request name
 
-        <div id="ch-70" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Request</div>
-                <div style="direction: rtl;" class="object-description">برگرداندن مقدار True درصورتی که  Header ریکوئست برابر با application/json باشد
+// برگرداندن میگریشن ها یک مرحله به عقب
+php artisan migrate:rollback
+
+// لیست تمامی روت های ثبت شده در پروژه
+php artisan route:list
+
+// نمایش لیست تمام کامند های آرتیسان
+php artisan list
+</code></pre>
                 </div>
             </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs">  Request::wantsJson()</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
+
         </div>
-
- 
-        <div id="ch-71" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">Request</div>
-                <div class="object-description"> دریافت ادرس جاری به صورت کامل</div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs">  Request::url()</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-
-        <div class="fakespace col-12 col-s-12"> ‌</div>
-        <a href="#html" onclick="copy_category(this)" id="html" class="header noselect col-12 col-s-12 authentication">HTML</a>
 
         
- 
-        <div id="ch-72" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">HTML</div>
-                <div class="object-description"> ایجاد لینک به فایل CSS</div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs">  HTML::style($url, $attributes)</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
- 
-        <div id="ch-73" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">HTML</div>
-                <div style="direction: rtl;" class="object-description">ایجاد لینک برای ایمیل ( جایگزین mailto:email )</div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs">  HTML::mailto($email, 'title', $attributes)</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
- 
-        <div id="ch-74" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">HTML</div>
-                <div style="direction: rtl;" class="object-description"> ایجاد لینک به فایل JavaScript</div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs">  HTML::script($url, $attributes)</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
- 
-        <div id="ch-75" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">HTML</div>
-                <div style="direction: rtl;" class="object-description"> ساخت یک لینک از نوع OL</div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs">  HTML::ol($list, $attributes)</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
- 
-        <div id="ch-76" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">HTML</div>
-                <div style="direction: rtl;" class="object-description"> ساخت یک لینک از نوع UL</div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs"> HTML::ul($list, $attributes)</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
- 
-        <div id="ch-77" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">HTML</div>
-                <div style="direction:rtl;"  class="object-description"> ایجاد لینک ( تگ a  )</div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs">  HTML::link($url, 'title', $attributes, $secure)</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
- 
-        <div id="ch-78" class="object col-8 col-s-8">
-            <div class="object-body">
-                <div class="object-title">HTML</div>
-                <div style="direction:rtl;" class="object-description"> ایجاد تصویر ( تگ img )</div>
-            </div>
-            <div onmouseover="if(detectMob()==false){ Fade(this.parentElement.id) }" onmouseout="if(detectMob()==false) { UnFade(this.parentElement.id) }" class="code-box col-12 col-s-12">
-                <pre>
-                    <code class="language-php hljs">  HTML::image($url, $alt, $attributes)</code>
-            </pre>
-                <a onclick="CopyCode(this.parentElement.parentElement.id)" id="clipboard" class="icon-clipboard btn"></a>
-                <a id="link" onclick="CopyLink(this.parentElement.parentElement.id)" class="icon-link btn"></a>
-            </div>
-        </div>
-
-
-        <footer class="footer">
-            <div class="col-12 col-s-12 copyright"><a class="footer-link" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> | محفوظ است <a class="footer-link" href="https://t.me/LaravelTip">@LaravelTip</a> تمامی حقوق برای</div>
-        </footer>
-
-
-        <div class="fakespace"></div>
 
     </div>
 
