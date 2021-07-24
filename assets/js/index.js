@@ -9,6 +9,7 @@ $(document).ready(function() {
         $('.header-description').css('color', 'rgba(255, 255, 255, 0.911)');
         $('.code-container').css('background-color', '#FFFFFF');
         $('.head-text').css('color', '#FFFFFF');
+        $('.footer-item').css('color', '#ffff');
         $('.paragraph').css('color', '#d5d5d5');
         $('#hljs-link').attr('href', 'assets/js/lib/highlightjs/styles/github.min.css');
     }
@@ -44,8 +45,11 @@ $('#toggle').click(function () {
         $('.paragraph').css('color', '#454545');
         $('#toggle').removeAttr('checked');
         localStorage.setItem("DarkMode", "Off");
+        $('.footer-item').css('color', '#252525');
+
     } else {
         // Checked
+        $('.footer-item').css('color', '#ffff');
         $('.paragraph').css('color', '#d5d5d5');
         $('.code-container').css('background-color', '#FFFFFF');
         $('.head-text').css('color', '#FFFFFF');
