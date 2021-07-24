@@ -187,6 +187,27 @@
     overflow-x: auto;
   }
 
+/* width */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 .head-text {
     margin: 0 auto;
     display: block;
@@ -217,6 +238,53 @@
   text-align: justify;
   direction: rtl;
   word-spacing: 0.1px;
+}
+
+.footer {
+  margin-top: 80px;
+}
+
+.footer-item {
+  font-family: shabnam;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 18px;
+  color: #ffff;
+}
+
+.fakespace {
+  height: 40px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: orange;
+}
+
+.GoUp {
+  display: none;
+  position: fixed; 
+  z-index: 9999;
+  bottom: 20px;
+  left: 30px; 
+  text-decoration: none;
+  background-color: #FF2D20;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  border: none;
+}
+
+.icon-arrow-up2 {
+  color: white;
+}
+
+.GoUp:hover {
+  opacity: 59%;
 }
 
 .tag {
@@ -299,6 +367,12 @@
   border-color: #6B6B6B;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+@media (max-width:1024px) {
+  .display-footer {
+    display: none;
+  }
 }
 
   @media (max-width:750px) {

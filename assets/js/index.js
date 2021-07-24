@@ -12,6 +12,18 @@ $(document).ready(function() {
         $('.paragraph').css('color', '#d5d5d5');
         $('#hljs-link').attr('href', 'assets/js/lib/highlightjs/styles/github.min.css');
     }
+
+    window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+{
+        $('#GoUp').css('display','block');
+    } else {
+        $('#GoUp').css('display','none');
+    }
+}
+
     
     hljs.highlightAll();
 
@@ -48,3 +60,9 @@ $('#toggle').click(function () {
 
 });
 
+
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    $('#GoUp').css('opacity','100%');
+}
