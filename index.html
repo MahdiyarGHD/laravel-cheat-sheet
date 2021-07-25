@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>چیت‌شیت فارسی لاراول</title>
+    <link rel="stylesheet" href="assets/styles/style.css?v=1.1">
+    <link id="hljs-link" rel="stylesheet" href="assets/js/lib/highlightjs/styles/github-dark.min.css">
+    <link id="hljs-link" rel="stylesheet" href="assets/fonts/icomoon/style.css">
+    <script src="assets/js/lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/lib/highlightjs/highlight.min.js"></script>
+</head>
+
+<body class="light">
+
+    <button onclick="topFunction()" id="GoUp" class="GoUp"><span class="icon-arrow-up2"></span></button>
+
+    <div class="col-8 col-s-8 container">
+        <nav class="nav col-12 col-s-12">
+            <img class="nav-logo" src="assets/img/laravel.svg" alt="laravel-logo">
+            <div class="header-title"><span>چیت‌شیت فارسی لاراول</span><br> <span class="header-description"> اولین
+                    چیت‌شیت فارسی لاراول (: </span></div>
+            <label for="toggle" class="theme-toggler settings-option" id="theme-toggler">
+                <input type="checkbox" id="toggle" class="theme-toggler__checkbox" /><span aria-hidden="true"
+                    class="theme-toggler__switch"></span></label>
+        </nav>
+
+        <div class="container-content col-8">
+
+            <div class="col-12 col-s-12 head-text" dir="rtl">ایجاد یک پروژه جدید لاراولی</div>
+
+            <div class="col-12 col-s-12 code-container">
+                <div class="circles-container">
+                    <div class="green-circle"></div>
+                    <div class="orange-circle"></div>
+                    <div class="red-circle"></div>
+                </div>
+                <pre>
+<code class="language-php hljs">
+  composer create-project laravel/laravel example-app
+</code>
+</pre>
+            </div>
+
+            <div class="col-12 col-s-12 tags-container">
+            <div class="col-12 col-s-12 head-text" dir="rtl">لیست موضوعات</div>
+                <a href="#artisan" class="tag">ارتیسان</a>
+                <a href="#Blade" class="tag">تمپلیت‌انجین</a>
+                <a href="#security" style="width:120px" class="tag">دستورات امنیتی</a>
+                <a href="#Mail" class="tag">ایمیل</a>
+                <a href="#files" class="tag">کار با فایل‌ها</a>
+                <a href="#cookies" class="tag">کوکی‌ها</a>
+                <a href="#auth" class="tag" style="width:130px">سیستم احرازهویت</a>
+                <a href="#request" class="tag">ریکوئست ‌ها</a>
+                <a href="#html" class="tag">HTML کلاس</a>
+            </div>
+
+
+            <div class="article-container">
+                <div class="col-4 col-s-4 head-text dotted" style="margin-top: 10px; font-size: 1.5rem;" id="artisan">آرتیسان</div>
+                <div class="col-12 col-s-12 code-container">
+                    <div class="circles-container">
+                        <div class="green-circle"></div>
+                        <div class="orange-circle"></div>
+                        <div class="red-circle"></div>
+                    </div>
+                    <pre>
+    <code class="language-php hljs"> 
+// اجرای پروژه روی پورت دلخواه
+php artisan serve --port 8000
+
+// ساخت مجدد فایل های اتو فریمورک لاراول
+php artisan dump-autoload
+
+// بهینه‌سازی پروژه برای پرفورمنس بهتر 
+php artisan optimize
+
+// حذف کلاس های کامپایل شده    
+php artisan clear-compiled
+
+// بهینه‌سازی پروژه برای پرفورمنس بهتر 
+php artisan down
+
+// بردن پروژه در حالت تعلیق
+php artisan optimize
+
+// در آوردن پروژه از حالت تعلیق
+php artisan up
+
+// ساخت یک کنترلر جدید
+php artisan make:controller
+
+// ساخت یک کلاس ایونت جدید
+php artisan make:event
+
+// ساخت یک کلاس ایمیل جدید
+php artisan make:email
+
+// ساخت یک کامند جدید آرتیسان
+php artisan make:command
+
+// ساخت یک میدِلوِر جدید
+php artisan make:middleware
+
+// دریافت راهنمایی درباره یک کامند
+php artisan -h 
+php artisan --help
+
+// نمایش تغییرات فریمورک
+php artisan changes
+
+// کنسول تینکر به شما اجازه میده با استفاده از کامندلاین با پروژه لاراولی‌تون ارتباط برقرار کنید 
+php artisan tinker
+
+// .env نمایش محتویات فایل
+php artisan env 
+
+// خالی کردن کش پروژه
+php artisan cache:clear
+
+// تنظیم کلید پروژه 
+php artisan key:generate
+
+// ساخت یک کلاس ریکوئست جدید
+php artisan make:request name
+
+// برگرداندن میگریشن ها یک مرحله به عقب
+php artisan migrate:rollback
+
+// لیست تمامی روت های ثبت شده در پروژه
+php artisan route:list
+
+// نمایش لیست تمام کامند های آرتیسان
+php artisan list
+</code></pre>
+                </div>
+            </div>
+
+            <div style="margin-top: 100px;" class="article-container">
+                <div class="col-4 col-s-4 head-text dotted" style="margin-top: 10px; font-size: 1.5rem;" id="Blade">Blade تمپلیت‌انجین</div>
+                <div class="col-12 col-s-12 code-container">
+                    <div class="circles-container">
+                        <div class="green-circle"></div>
+                        <div class="orange-circle"></div>
+                        <div class="red-circle"></div>
+                    </div>
+                    <pre>
+<code class="language-php hljs">
+// Blade دستورات شرطی در تمپلیت انجین 
+
+@unless
+@endunless
+
+@if
+@endif
+
+@else
+@elseif
+
+// Blade دستورات حلقه‌ای تمپلیت انجین 
+
+@for
+@endfor
+
+@foreach
+@endforeach
+
+@while
+@endwhile
+
+// چاپ کردن محتوی در صفحه
+{{ $var }}
+
+// htmlspecialchars چاپ کردن محتوی در صفحه بدون در نظر گرفتن بحث
+{!! $var !!}
+
+//  چاپ کردن محتوی در صفحه با این تفاوت که اگر مقدار اول خالی باشد مقدار دوم چاپ می‌شود
+{{{ $name or 'Default' }}}
+
+// چاپ کردن محتوی حاوی کد های جاوااسکریپت در صفحه
+@{{ $js_code }}
+
+// استفاده از کد های پی‌اچ‌پی در تمپلیت انجین
+@php
+@endphp
+
+// Header بارگذاری قسمت های پرتکرار سایت مانند 
+// .blade.php بدون
+
+@include('header')
+
+@section('name')
+@endsection
+
+yield('name')
+
+extend('name')
+</code></pre></div>
+
+            </div>
+
+            <div style="margin-top: 100px;" class="article-container">
+                <div class="col-4 col-s-4 head-text dotted" style="margin-top: 10px; font-size: 1.5rem;" id="security">دستورات امنیتی</div>
+                <div class="col-12 col-s-12 code-container">
+                    <div class="circles-container">
+                        <div class="green-circle"></div>
+                        <div class="orange-circle"></div>
+                        <div class="red-circle"></div>
+                    </div>
+                    <pre>
+<code class="language-php hljs">
+// هش کردن متن وارد شده توسط خود لاراول
+Hash::make('SecretString')
+
+// چک کردن هش شده بودن متن   
+Hash::check('String', $hashedString)
+
+// رمزنگاری با قابلیت بازگشایی متن توسط لاراول
+Crypt::encrypt('secretstring')
+
+// بازگشایی متن رمزنگاری شده توسط لاراول
+Crypt::decrypt($encryptedString)
+
+// تنظیم کردن حالت های رمزنگاری 
+Crypt::setMode('ctr')
+Crypt::setCipher($cipher)
+</code></pre></div>
+
+            </div>
+
+            <div style="margin-top: 100px;" class="article-container">
+                <div class="col-4 col-s-4 head-text dotted" style="margin-top: 10px; font-size: 1.5rem;" id="Mail">ایمیل</div>
+                
+                <p class="paragraph">
+                 ارسال ایمیل با استفاده از لاراول 
+                 <br>
+                 پارامتر اول ، قالبی است که ما میخواهیم آن را به صورت ایمیل برای کاربر ارسال کنیم . 
+                 <br>
+                 پارامتر دوم ارایه‌ای از اطلاعات است که به  view انتخاب شده در پارامتر اول ارسال می‌شود .
+                 <br>
+                  پارامتر سوم که بخش مهمی در ارسال ایمیل است ، به شما این امکان را می دهد که گیرنده ها، فرستنده ها، موضوع ها و سایر جنبه های ایمیل را سفارشی کنید . در ادامه با دستورات پارامتر سوم اشنا می‌شویم  .   دستوراتی که در ادامه برای قرار میگیرد‌‌‌‌ ، باید در پارامتر سوم این دستور به صورت callback قرار بگیرد.
+                 <br>
+
+                </p>
+                <div class="col-12 col-s-12 code-container">
+                    <div class="circles-container">
+                        <div class="green-circle"></div>
+                        <div class="orange-circle"></div>
+                        <div class="red-circle"></div>
+                    </div>
+                    <pre>
+<code class="language-php hljs">
+Mail::send('email.view', $data, function($message){})
+</code></pre></div>
+
+<p class="paragraph">
+    آدرس کسی که ایمیل باید برای آن ارسال شود
+</p>
+
+<div class="col-12 col-s-12 code-container">
+    <div class="circles-container">
+        <div class="green-circle"></div>
+        <div class="orange-circle"></div>
+        <div class="red-circle"></div>
+    </div>
+    <pre>
+<code class="language-php hljs">
+$message->to('email@example.com', 'Mr. Example');
+</code></pre></div>
+
+<p class="paragraph">
+    ارسال فایل ضمیمه همراه با ایمیل
+</p>
+
+<div class="col-12 col-s-12 code-container">
+    <div class="circles-container">
+        <div class="green-circle"></div>
+        <div class="orange-circle"></div>
+        <div class="red-circle"></div>
+    </div>
+    <pre>
+<code class="language-php hljs">
+$message->attach('foo\bar.txt')
+$message->embed('foo\bar.txt')
+</code></pre></div>
+
+<p class="paragraph">
+    و بقیه تنظیمات ایمیل ارسالی
+</p>
+
+<div class="col-12 col-s-12 code-container">
+    <div class="circles-container">
+        <div class="green-circle"></div>
+        <div class="orange-circle"></div>
+        <div class="red-circle"></div>
+    </div>
+    <pre>
+<code class="language-php hljs">
+$message->from('email@example.com', 'Mr. Example');
+$message->sender('email@example.com', 'Mr. Example');
+$message->returnPath('email@example.com');
+$message->to('email@example.com', 'Mr. Example');
+$message->cc('email@example.com', 'Mr. Example');
+$message->bcc('email@example.com', 'Mr. Example');
+$message->replyTo('email@example.com', 'Mr. Example');
+$message->subject('Welcome to the Jungle');
+$message->priority(2);
+</code></pre></div>
+
+<p class="paragraph">
+    برای کار کردن این دستورات ، باید در فایل .env به این صورت تنظیمات را وارد کنید
+</p>
+
+<div class="col-12 col-s-12 code-container">
+    <div class="circles-container">
+        <div class="green-circle"></div>
+        <div class="orange-circle"></div>
+        <div class="red-circle"></div>
+    </div>
+    <pre>
+<code class="language-php hljs">
+MAIL_DRIVER = smtp
+MAIL_HOST = smtp.gmail.com
+MAIL_PORT = 587
+MAIL_USERNAME = your-gmail-username
+MAIL_PASSWORD = your-application-specific-password
+MAIL_ENCRYPTION = tls
+</code></pre></div>
+
+            </div>
+
+            <div style="margin-top: 100px;" class="article-container">
+                <div class="col-4 col-s-4 head-text dotted" style="margin-top: 10px; font-size: 1.5rem;" id="files">کار‌ با فایل‌ها</div>
+                <div class="col-12 col-s-12 code-container">
+                    <div class="circles-container">
+                        <div class="green-circle"></div>
+                        <div class="orange-circle"></div>
+                        <div class="red-circle"></div>
+                    </div>
+                    <pre>
+<code class="language-php hljs">
+// بررسی وجود داشتن یک آدرس
+File::exists('path')
+
+// ویرایش محتوی یک فایل ( پارامتر اول آدرس فایل و پارامتر دوم محتوی ) 
+File::put('path', 'contents')
+
+// افزودن متن به فایلی که آدرس آن در پارامتر اول قرار داده شده
+File::append('path', 'data')
+
+// پاک کردن فایل توسط آدرس فایل
+File::delete('path')
+
+// جابه‌جایی فایل از مکانی به مکان دیگر
+File::move('path', 'target')
+
+// کپی کردن فایل از مکانی به مکان دیگر
+File::copy('path', 'target')
+
+// دریافت نوع فایل با استفاده از آدرس فایل
+File::type('path')
+
+//  دریافت تمام دایرکتوری های درون یک دایرکتوری
+File::directories('directory')
+
+//  تشخیص قابل نوشتن بودن مسیر فایلی که داده شده است
+File::isWritable('path')
+
+//  دریافت اخرین تاریخ ساخت/ویرایش یک فایل
+File::lastModified('path')
+
+// دریافت تمام فایل های یک دایرکتوری بصورت آرایه
+File::files('directory')
+
+//  و بقیه دستورات کنترلی دایرکتوری ها
+File::deleteDirectory('directory', $preserve = false);
+File::copyDirectory('directory', 'destination', $options = null);
+File::cleanDirectory('directory');
+File::makeDirectory('path', $mode = 0777, $recursive = false);
+</code></pre></div>
+
+            </div>
+        
+        
+            <div style="margin-top: 100px;" class="article-container">
+                <div class="col-4 col-s-4 head-text dotted" style="margin-top: 10px; font-size: 1.5rem;" id="cookies">کوکی‌ها</div>
+                <div class="col-12 col-s-12 code-container">
+                    <div class="circles-container">
+                        <div class="green-circle"></div>
+                        <div class="orange-circle"></div>
+                        <div class="red-circle"></div>
+                    </div>
+                    <pre>
+<code class="language-php hljs">
+//  دریافت کوکی با استفاده از کلید/نام کوکی
+Cookie::get('key')
+
+// ساخت کوکی ابدی
+Cookie::forever('key', 'value')
+
+// ساخت کوکی با زمان مشخص منقضی شدن 
+Cookie::make('key', 'value', 'minutes')
+
+// حذف کوکی با استفاده از کلید/نام کوکی
+Cookie::forget('key')
+</code></pre></div>
+
+            </div>
+      
+            <div style="margin-top: 100px;" class="article-container">
+                <div class="col-4 col-s-4 head-text dotted" style="margin-top: 10px; font-size: 1.5rem;" id="auth">سیستم احراز‌هویت</div>
+                <div class="col-12 col-s-12 code-container">
+                    <div class="circles-container">
+                        <div class="green-circle"></div>
+                        <div class="orange-circle"></div>
+                        <div class="red-circle"></div>
+                    </div>
+                    <pre>
+<code class="language-php hljs">
+// چک کردن لاگین بودن کاربر 
+Auth::check()
+// مثال
+if(Auth::check())
+{
+    // User Logined
+}
+
+// دریافت اطلاعات کاربر لاگین شده‌
+Auth::user()
+
+// دریافت آیدی کاربر لاگین شده
+Auth::id()
+
+// خارج کردن کاربر لاگین شده از حساب کاربری 
+Auth::logout()
+
+// لاگین کردن کاربر با استفاده از آيدی
+Auth::loginUsingId(1)
+Auth::login(User::find(1))
+
+// Blade دستور شرطی بررسی لاگین بودن کاربر در تمپلیت انجین 
+@auth
+    // User Logined
+@endauth
+
+// ارسال یک یادآور پسورد برای کاربر 
+Password::remind($credentials, function($message, $user){})
+
+// 'ایجاد 'مرا به خاطر بسپار
+Auth::attempt($credentials, true)
+
+// بررسی صحت یک کاربر
+Auth::validate($credentials)
+
+// ساخت 'مرا به خاطر بسپار' با استفاده از ایمیل و پسورد کاربر‌‌ 
+Auth::attempt(array('email' => $email, 'password' => $password))
+
+// لاگین کردن کاربر فقط یک بار بدون ذخیره کردن کوکی 
+Auth::once($credentials)
+</code></pre></div>
+
+            </div>
+
+            <div style="margin-top: 100px;" class="article-container">
+                <div class="col-4 col-s-4 head-text dotted" style="margin-top: 10px; font-size: 1.5rem;" id="request">ریکوئست‌ها</div>
+                <div class="col-12 col-s-12 code-container">
+                    <div class="circles-container">
+                        <div class="green-circle"></div>
+                        <div class="orange-circle"></div>
+                        <div class="red-circle"></div>
+                    </div>
+                    <pre>
+<code class="language-php hljs">
+// دریافت نوع ریکوئست
+Request::method()
+
+// بررسی نوع یک ریکوئست با متود مشخص شده
+Request::isMethod('post')
+
+// دریافت پورت ریکوئست
+Request::getPort()
+
+// باشد json/* برگرداندن مقدار صحیح اگر هیدر ریکوئست حاوی 
+Request::isJson()
+
+// دریافت ایپی کاربر 
+Request::getClientIp()
+
+// دریافت URi مسیر جاری 
+Request->path()
+
+// باشد aplication/json برگرداندن مقدار صحیح اگر هیدر ریکوئست حاوی 
+Request::wantsJson()
+
+// دریافت ادرس جاری به صورت کامل
+Request::url()
+</code></pre></div>
+
+            </div>
+
+            <div style="margin-top: 100px;" class="article-container">
+                <div class="col-4 col-s-4 head-text dotted" style="margin-top: 10px; font-size: 1.5rem;" id="html"> HTML کلاس</div>
+                <div class="col-12 col-s-12 code-container">
+                    <div class="circles-container">
+                        <div class="green-circle"></div>
+                        <div class="orange-circle"></div>
+                        <div class="red-circle"></div>
+                    </div>
+                    <pre>
+<code class="language-php hljs">
+// ایجاد لینک به فایل CSS
+HTML::style($url, $attributes)
+
+// ( mailto:email جایگزین ) ایجاد لینک برای ایمیل 
+HTML::mailto($email, 'title', $attributes)
+
+// JavaScript ایجاد تگ اسکریپت به یک فایل 
+HTML::script($url, $attributes)
+
+// OL ساخت یک لینک از نوع 
+HTML::ol($list, $attributes)
+
+// UL ساخت یک لینک از نوع
+HTML::ul($list, $attributes)
+
+// ( تگ a ) ایجاد لینک 
+HTML::link($url, 'title', $attributes, $secure)
+
+// ( تگ img ) ایجاد تصویر 
+HTML::image($url, $alt, $attributes)
+</code></pre></div>
+
+            </div>
+
+            <footer class="footer col-s-12 col-12">
+                <div class="footer-item col-s-12 col-12">
+                    <a href="https://t.me/MahdiyarDev" class="footer-link">@MahdiyarDev</a> توسعه یافته توسط    
+                </div>                
+                <div class="footer-item col-s-12 col-12">
+                    <a href="https://github.com/MahdiyarGHD/laravel-cheat-sheet" class="footer-link">مشارکت در توسعه پروژه</a>  
+                </div>
+                
+                <div class="footer-item col-s-12 col-12">
+                    <a href="https://t.me/LaravelTip" class="footer-link">کانال تلگرام</a>  
+                </div>
+            </footer>
+
+            <div class="fakespace"></div>
+
+        </div>
+    </div>
+
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
