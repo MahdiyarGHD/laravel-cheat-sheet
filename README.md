@@ -1,5 +1,5 @@
 <div style="text-align: center;width:100%">
-    <img src="https://raw.githubusercontent.com/MahdiyarGHD/laravel-cheat-sheet/main/cover.png" alt="چیت‌شیت فارسی لاراول" style="max-width: 100%;text-align:center">
+    <img style="width:100%;" src="https://raw.githubusercontent.com/MahdiyarGHD/laravel-cheat-sheet/main/cover.png" alt="چیت‌شیت فارسی لاراول" style="">
 </div>
 
 <h1 style="text-align: right;direction: rtl;" dir="rtl">⭕️ چیت‌شیت فارسی لاراول</h1>
