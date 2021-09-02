@@ -33,7 +33,7 @@
 
         <div class="container-content col-8">
 
-            <div class="col-12 col-s-12 head-text" dir="rtl">ایجاد یک پروژه جدید لاراولی</div>
+            <div class="col-12 col-s-12 head-text" id="head-text" dir="rtl">ایجاد یک پروژه جدید لاراولی</div>
 
             <div class="col-12 col-s-12 code-container">
                 <div class="circles-container">
@@ -59,6 +59,7 @@
                 <a href="#auth" class="tag" style="width:130px">سیستم احرازهویت</a>
                 <a href="#request" class="tag">ریکوئست ‌ها</a>
                 <a href="#html" class="tag">HTML کلاس</a>
+                <a href="#loop" class="tag">loop متغیر</a>
             </div>
 
 
@@ -534,6 +535,70 @@ HTML::image($url, $alt, $attributes)
 </code></pre></div>
 
             </div>
+
+            <div style="margin-top: 100px;" class="article-container">
+                <div class="col-4 col-s-4 head-text dotted" style="margin-top: 10px; font-size: 1.5rem;" id="loop"> loop متغیر </div>
+                <div class="col-12 col-s-12 code-container">
+                    <div class="circles-container">
+                        <div class="green-circle"></div>
+                        <div class="orange-circle"></div>
+                        <div class="red-circle"></div>
+                    </div>
+                    <pre>
+<code class="language-php hljs">
+// در حلقه های تمپلیت انجین $loop متغیر
+
+//  دریافت ایندکس فعلی حلقه ( از 0 شروع می‌شود )
+@foreach ($posts as $post)
+    Current index: {{ $loop->index }}
+@endforeach
+
+
+// دریافت تعداد دفعاتی که از چرخش حلقه باقی مانده است
+@foreach ($posts as $post)
+    {{ $loop->remaining }}
+@endforeach
+
+
+// دریافت تعداد کل آیتم های موجود در آرایه 
+@foreach ($posts as $post)
+    {{ $loop->count }}
+@endforeach
+
+
+// دریافت تعداد دفعاتی که تا به‌حال حلقه اجرا شده ( از یک شروع می‌شود )
+@foreach ($posts as $post)
+    {{ $loop->iteration }}
+@endforeach
+
+
+// ( Boolean ) تشخیص اولین چرخش حلقه 
+@foreach ($posts as $post)
+    @if ($loop->first)
+    //
+    @endif
+@endforeach
+
+
+// ( Boolean ) تشخیص آخرین چرخش حلقه 
+@foreach ($posts as $post)
+    @if ($loop->last)
+     //
+    @endif
+@endforeach
+
+
+// حلقه والد $loop برگرداندن مقدار   
+@foreach ($posts as $post)
+    @foreach($post->comments as $comment)
+        {{ $loop->parent->iteration }}
+    @endforeach
+@endforeach
+
+</code></pre></div>
+
+            </div>
+
 
             <footer class="footer col-s-12 col-12">
                 <div class="footer-item col-s-12 col-12">

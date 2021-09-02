@@ -1,22 +1,29 @@
+function sleep (time) {
+    return new Promise((resolve) => setTimeout(resolve, time));
+  }
+
+  if(localStorage.getItem("DarkMode") == "On") 
+  {
+      $(document.body).addClass('dark');
+      $(document.body).removeClass('light');
+      $('#toggle').attr('checked', 'true');
+      $('.header-title').css('color', 'rgba(255, 255, 255, 0.911)');
+      $('.header-description').css('color', 'rgba(255, 255, 255, 0.911)');
+      $('.code-container').css('background-color', '#FFFFFF');
+      $('.head-text').css('color', '#FFFFFF');
+      $('.footer-item').css('color', '#ffff');
+      $('.paragraph').css('color', '#d5d5d5');
+      $('#hljs-link').attr('href', 'assets/js/lib/highlightjs/styles/github.min.css');
+  }
+
+
 $(document).ready(function() {
 
-    if(localStorage.getItem("DarkMode") == "On") 
-    {
-        $(document.body).addClass('dark');
-        $(document.body).removeClass('light');
-        $('#toggle').attr('checked', 'true');
-        $('.header-title').css('color', 'rgba(255, 255, 255, 0.911)');
-        $('.header-description').css('color', 'rgba(255, 255, 255, 0.911)');
-        $('.code-container').css('background-color', '#FFFFFF');
-        $('.head-text').css('color', '#FFFFFF');
-        $('.footer-item').css('color', '#ffff');
-        $('.paragraph').css('color', '#d5d5d5');
-        $('#hljs-link').attr('href', 'assets/js/lib/highlightjs/styles/github.min.css');
-    }
-
+    
     window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
+
 if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
 {
         $('#GoUp').css('display','block');
