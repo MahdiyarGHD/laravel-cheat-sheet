@@ -16,6 +16,8 @@
         <li dir="rtl" style="text-align: right;direction: rtl;"><a dir="rtl" target="_blank" href="https://laravelguide.ir#auth">💠 سیستم احرازهویت</a></li>
           <li dir="rtl" style="text-align: right;direction: rtl;"><a dir="rtl" target="_blank" href="https://laravelguide.ir#request">💠 ریکوئست‌ها</a></li>
             <li dir="rtl" style="text-align: right;direction: rtl;"><a dir="rtl" target="_blank" href="https://laravelguide.ir#html">💠  کلاس HTML </a></li>
+                <li dir="rtl" style="text-align: right;direction: rtl;"><a dir="rtl" target="_blank" href="https://laravelguide.ir#loop">💠 متغیر loop </a></li>
+
 </ul>
 
 <br>
