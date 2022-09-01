@@ -59,7 +59,7 @@
                 <img class="subject-img" src="../assets/images/helpers.png" alt="terminal">
                 
                 <div class="subject-texts-container">
-                    <div class="subject-title"><svg class="subject-arrow" width="10" height="10" viewBox="0 0 3 6" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1_5)"><path d="M3 6L0 3L3 0" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g><defs><clipPath id="clip0_1_5"><rect width="3" height="6" fill="white"/></clipPath></defs></svg> ها Helper</div>
+                    <div class="subject-title"><svg class="subject-arrow" width="10" height="10" viewBox="0 0 3 6" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1_5)"><path d="M3 6L0 3L3 0" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g><defs><clipPath id="clip0_1_5"><rect width="3" height="6" fill="white"/></clipPath></defs></svg> هلپر ها</div>
                     <div class="subject-desc">
                     لاراول شامل انواع مختلفی از توابع گلوبال «هلپر» PHP است.
                     </div>

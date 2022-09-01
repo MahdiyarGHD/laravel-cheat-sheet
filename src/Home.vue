@@ -161,15 +161,14 @@ Crypt::decrypt($encryptedString)
 
 // تنظیم کردن حالت های رمزنگاری 
 Crypt::setMode('ctr')
-Crypt::setCipher($cipher)
-"
+Crypt::setCipher($cipher)"
 
  style="margin-top: 30px" class="language-php"
  />
  
 
       <div id="helpers" class="content-title">
-        <div @click="redirect('#helpers')">هاHelper</div> <div class="hashtag noselect"># </div>
+        <div @click="redirect('#helpers')">هلپر ها</div> <div class="hashtag noselect"># </div>
       </div>
       
       <Code
