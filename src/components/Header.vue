@@ -30,7 +30,7 @@
                     <a target="_blank" href="https://github.com/mahdiyarghd/laravel-cheat-sheet">گیت‌هاب</a>
                     <a target="_blank" href="https://laravelTip.t.me">تلگرام</a>
                     <div class="dropdown-holder"></div>
-                    <a target="_blank" href="https://laravel.com/docs/9.x/">مستندات</a>
+                    <a target="_blank" href="https://laravel.com/docs/10.x/">مستندات</a>
                 </div>
             </div>
         </div>
