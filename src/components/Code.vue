@@ -34,7 +34,6 @@ export default {
 
         Array.from(codes).forEach(element => {
             const result = element.innerHTML.split(/\n/);
-            console.log(result.length);
             var lines = result.length 
             let html = '';
             for (var i = 1; i <= lines; i++) {
