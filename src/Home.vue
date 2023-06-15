@@ -467,6 +467,12 @@ return redirect()->route('route.name');
 // ایجاد یک نمونه از صحت‌سنج
 $validator = validator($data, $rules, $messages);
 
+//  تبدیل یک رشته به فرمت snake_case 
+Str::of('maryamShm')->snake(); --> maryam_shm
+
+// مرتب کردن آرایه به صورت نزولی
+Arr::sortDesc($array);
+
 // ایجاد یک نمونه از یک ویو
 return view('auth.login');"
  style="margin-top: 30px" class="language-php"
