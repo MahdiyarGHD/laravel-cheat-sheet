@@ -380,8 +380,7 @@ $string = Str::upper('laravel');
 
 
 // شمردن تعداد کلمات در یک رشته
-$string = Str::upper('laravel');
-// LARAVEL
+Str::wordCount('Hello, world!'); // 2
 
 
 // درصورت وجود اعضای آرایه دریک رشته true برگرداندن مقدار 
