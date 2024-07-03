@@ -2,6 +2,7 @@
   "name": "laravel-cheat-sheet",
   "private": true,
   "version": "0.0.1",
+  "homepage": "https://laravelguide.ir",
   "type": "module",
   "scripts": {
     "dev": "vite",
