@@ -6,5 +6,5 @@ export function cn(...inputs) {
 }
 
 export function isNullOrEmpty(str) {
-  return !str || str.trim().length === 0;
+  return !str;
 }
