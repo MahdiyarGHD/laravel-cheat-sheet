@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$custom-scrollbar-bg: transparent;
+$custom-scrollbar-border: rgba(31,204,204,.63);
+$custom-scrollbar-thumb: #38bdf8;
+$custom-scrollbar-thumb-hover: #23789c;
+
+@layer base {
+
+    @font-face {
+      font-family: 'Estedad';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('../fonts/Estedad/Estedad-Medium.woff2') format('woff2');
+    }
+    
+    @font-face {
+      font-family: 'Estedad';
+      font-style: lighter;
+      font-weight: 300;
+      font-display: swap;
+      src: url('../fonts/Estedad/Estedad-Light.woff2') format('woff2');
+    }
+
+    body {
+      background-color: rgb(0, 8, 24);
+      background-image: radial-gradient(at 53.58% 0%, rgba(36, 40, 151, 0.25) 0%, transparent 50%);
+      background-repeat: no-repeat;
+      @apply max-md:bg-none;
+    }
+      
+    .my-masonry-grid {
+      display: -webkit-box; 
+      display: -ms-flexbox;
+      @apply ml-[-30px] mt-[40px] w-auto flex
+    }
+    .my-masonry-grid_column {
+      @apply pl-[30px] bg-clip-padding	
+    }
+    
+    .my-masonry-grid_column > div { 
+      @apply mb-[30px];
+    }
+    
+    p {
+      @apply text-[14px] mt-[2px] w-full text-justify font-light
+    }
+    
+    
+    code {
+      counter-reset: line;
+      padding-bottom: 0px !important;
+    }
+    
+    code .line-number::before {
+      counter-increment: line;
+      content: counter(line);
+      width: 2em;
+      margin-right: 0.5em;
+    }
+    
+    ::-webkit-scrollbar {
+      width: 1rem;
+      height: 1rem;
+      background-color: $custom-scrollbar-bg
+    }
+
+    ::-webkit-scrollbar-track:vertical {
+      border-left: .0625rem solid $custom-scrollbar-border
+    }
+
+    ::-webkit-scrollbar-corner {
+      border-top: .0325rem solid $custom-scrollbar-border;
+      border-left: .0325rem solid $custom-scrollbar-border;
+      background-color: transparent
+    }
+
+    ::-webkit-scrollbar-thumb {
+      min-width: 3rem;
+      min-height: 3rem;
+      border-radius: 1rem;
+      border: .4rem solid transparent;
+      background-color: $custom-scrollbar-thumb;
+      background-clip: content-box;
+      -moz-background-clip: content;
+      -webkit-background-clip: content
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: $custom-scrollbar-thumb-hover
+    }
+}
