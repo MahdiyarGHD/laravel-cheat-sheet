@@ -2,13 +2,15 @@ import { useEffect, useRef } from 'react';
 import hljs from 'highlight.js/lib/core';
 import '../lib/highlightjs/styles/github-dark.min.css';
 import php from 'highlight.js/lib/languages/php';
+import { isNullOrEmpty } from '../lib/utils';
 
 const Codeblock = ({ hasHighlight = true, language = '', isLineNumberDisabled = false, children }) => {
     if (hasHighlight === false) 
         return (<span className='font-[monospace]'>{children}</span>) 
     
-    children = children.replace(/^\s*[\r\n]+|[\r\n]+\s*$/g, '').replace(/^[ \t]+/gm, '');
-
+    if (!isNullOrEmpty(children)) 
+      children = children.replace(/^\s*[\r\n]+|[\r\n]+\s*$/g, '').replace(/^[ \t]+/gm, '');
+    
     const codeRef = useRef(null);
   
   useEffect(() => {
