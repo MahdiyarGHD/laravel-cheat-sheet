@@ -4,7 +4,7 @@ import '../lib/highlightjs/styles/github-dark.min.css';
 import php from 'highlight.js/lib/languages/php';
 import { isNullOrEmpty } from '../lib/utils';
 
-const Codeblock = ({ hasHighlight = true, language = '', isLineNumberDisabled = false, children }) => {
+const Codeblock = ({ hasHighlight = true, language = '', isLineNumberDisabled = false, children = 'hey' }) => {
     if (hasHighlight === false) 
         return (<span className='font-[monospace]'>{children}</span>) 
     
