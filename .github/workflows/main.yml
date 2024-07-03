@@ -1,18 +1,30 @@
-name: Build and Deploy
+name: Build and Deploy React App to gh-pages
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
-  build:
-
+  build-and-deploy:
     runs-on: ubuntu-latest
-    
     steps:
-    - uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
-    - name: Build and Deploy React app to GitHub Pages
-      uses: omkartapale/react-deployment-gh-pages@v1.0.0
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build React App
+        run: npm run build
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
