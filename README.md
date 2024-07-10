@@ -22,8 +22,9 @@
 
 
 <br>
-
+<h3 style="text-align: right;direction: rtl;" dir="rtl">⭕️ قالب مورد استفاده</h1>
+- https://github.com/MahdiyarGHD/CheatSheetTemplate/
 <br>
-
+<br>
 <h3 dir="rtl" style="text-align: right;direction: rtl;">🤝 مشارکت</h3>
 <p dir="rtl" style="text-align: right;direction: rtl;">این پروژه تحت پروانه GPL نسخه 3 منتشر و نگه‌داری می‌شود و از این‌جهت، هرکسی می‌تواند در صورت نیاز اقدام به مشارکت برای اصلاح یا بهبود یا حتی اضافه‌کردن ویژگی‌های جدید به این پروژه کند، همچنین ایجاد فورک‌های مختلف از پروژه و توسعه پروژه در شاخه‌ای جدا، چه به‌صورت رایگان و چه به‌صورت تجاری، هیچ‌گونه مانعی ندارد.</p>
