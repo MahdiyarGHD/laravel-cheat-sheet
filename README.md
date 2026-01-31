@@ -1,7 +1,3 @@
-<div style="text-align: center;padding: 0;margin: 0;">
-    <img src="https://raw.githubusercontent.com/MahdiyarGHD/laravel-cheat-sheet/main/cover.jpg" alt="راهنمای فارسی لاراول" style="width: 100%;">
-</div>
-
 <h1 style="text-align: right;direction: rtl;" dir="rtl">⭕️ راهنمای فارسی لاراول</h1>
 
 <p style="text-align: right;direction: rtl;" dir="rtl">پروژه راهنمای لاراول، با هدف جمع‌آوری دستورات پرکاربرد لاراول سعی دارد پروسه توسعه پروژه را آسان‌تر کند و باعث کم‌تر شدن اتلاف وقت می‌شود.</p>
